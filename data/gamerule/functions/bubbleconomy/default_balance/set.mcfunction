@@ -1,0 +1,1 @@
+tellraw @s ["", {"text":"[Click here]", "color":"yellow", "clickEvent":{"action":"suggest_command", "value":"/scoreboard players set $DefaultBalance bubbleconomy "}}, " to set Default Balance value"]

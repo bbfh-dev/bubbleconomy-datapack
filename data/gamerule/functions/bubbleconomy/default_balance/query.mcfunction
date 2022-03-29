@@ -1,0 +1,1 @@
+tellraw @s ["Defalt Balance gamerule is set to ", {"score":{"name":"$DefaultBalance", "objective":"bubbleconomy"}, "color":"green"}]

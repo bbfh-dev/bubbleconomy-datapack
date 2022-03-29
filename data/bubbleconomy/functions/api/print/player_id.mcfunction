@@ -1,0 +1,1 @@
+tellraw @s ["\u2502 ", {"text":"[/]", "color":"yellow", "hoverEvent":{"action":"show_text", "contents":"Use /trigger buec.get_id"}}, " Your ID: ", {"score":{"objective":"buec.id", "name":"@s"}, "color":"green"}]

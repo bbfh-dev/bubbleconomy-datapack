@@ -1,0 +1,2 @@
+execute unless data entity @p SelectedItem.id run tellraw @p ["", {"text":"Bubbleconomy ERROR", "bold":true}, " \u25b6 ", {"text":"Hold an item to sell", "color":"red"}]
+execute if data entity @p SelectedItem.id run function bubbleconomy:player/operation/trade/sell/run

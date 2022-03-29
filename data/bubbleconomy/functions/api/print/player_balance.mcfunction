@@ -1,0 +1,2 @@
+function bubbleconomy:api/get_player_instance
+tellraw @s ["\u2502 ", {"text":"[/]", "color":"yellow", "hoverEvent":{"action":"show_text", "contents":"Use /trigger buec.get_balance"}}, " Your balance: ", {"nbt":"Instance.Match.Balance", "storage":"minecraft:bubbleconomy", "interpret":true, "color":"green", "extra":["β"]}]

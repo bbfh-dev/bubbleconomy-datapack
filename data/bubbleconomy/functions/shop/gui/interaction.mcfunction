@@ -1,0 +1,2 @@
+execute as @a store success score @s bubbleconomy run clear @s #bubbleconomy:gui_items{Tags:["buec.gui_item"]} 0
+execute at @p[scores={bubbleconomy=1}] if score @p buec.id = @s buec.id run function bubbleconomy:shop/gui/interaction_handler

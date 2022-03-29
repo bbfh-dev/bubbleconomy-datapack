@@ -1,0 +1,1 @@
+execute as @e[tag=-buec.kill] at @s run function bubbleconomy:etc/kill
