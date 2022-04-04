@@ -1,0 +1,2 @@
+execute store result score #Value bubbleconomy run data get storage minecraft:bubbleconomy Thread[-1].Balance
+execute store result storage minecraft:bubbleconomy Thread[-1].Balance int 1 run scoreboard players operation #Value bubbleconomy = #Amount bubbleconomy

@@ -1,0 +1,7 @@
+execute store result score @s buec.target_id run data get storage minecraft:bubbleconomy Instance.Match.ID
+execute if entity @p[tag=+buec.this] run tellraw @s ["", {"text":"Bubbleconomy INFO", "bold":true}, " \u25b6 ", {"text":"Setting balance to an online player ", "color":"green"}, {"selector":"@p[tag=+buec.this]", "color":"yellow"}, {"text":"! Please ", "color":"green"}, {"text":"[Enter]", "color":"light_purple", "hoverEvent":{"action":"show_text", "contents":"You will be prompted an amount in β (Bubbles)."}, "clickEvent":{"action":"suggest_command", "value":"/trigger buec.set_amount set "}}, {"text":" the amount.", "color":"green"}]
+execute unless entity @p[tag=+buec.this] run tellraw @s ["", {"text":"Bubbleconomy INFO", "bold":true}, " \u25b6 ", {"text":"Setting balance to an offline player ", "color":"green"}, {"text":"Unknown", "color":"gray"}, {"text":"! Please ", "color":"green"}, {"text":"[Enter]", "color":"light_purple", "hoverEvent":{"action":"show_text", "contents":"You will be prompted an amount in β (Bubbles)."}, "clickEvent":{"action":"suggest_command", "value":"/trigger buec.set_amount set "}}, {"text":" the amount.", "color":"green"}]
+
+scoreboard players set @s buec.dbstate 2
+scoreboard players enable @s buec.set_amount
+scoreboard players set @s buec.set_amount -1

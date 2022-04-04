@@ -17,6 +17,8 @@ scoreboard objectives add buec.get_id trigger
 scoreboard objectives add buec.transfer_id trigger
 scoreboard objectives add buec.set_amount trigger
 
+scoreboard objectives add buec.set_balance trigger
+
 forceload add 0 0
 
 execute unless data storage minecraft:bubbleconomy Messages run data modify storage minecraft:bubbleconomy Messages set value []

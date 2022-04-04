@@ -13,6 +13,7 @@ scoreboard objectives remove buec.get_balance
 scoreboard objectives remove buec.get_id
 scoreboard objectives remove buec.transfer_id
 scoreboard objectives remove buec.set_amount
+scoreboard objectives remove buec.set_balance
 
 data remove storage minecraft:bubbleconomy Item
 data remove storage minecraft:bubbleconomy Bank

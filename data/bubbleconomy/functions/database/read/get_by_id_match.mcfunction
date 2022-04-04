@@ -4,3 +4,4 @@ execute unless entity @p[tag=+buec.this] run tellraw @s ["", {"text":"Bubblecono
 
 scoreboard players set @s buec.dbstate 1
 scoreboard players enable @s buec.set_amount
+scoreboard players set @s buec.set_amount -1
