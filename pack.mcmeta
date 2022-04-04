@@ -3,11 +3,11 @@
         "pack_format": 8,
         "description": [
             {
-                "text": "Bubbleconomy 1.0a",
+                "text": "Bubbleconomy 1.0b",
                 "color": "#f4b64b"
             },
             {
-                "text": " | 29/03/22",
+                "text": " | 04/04/22",
                 "color": "#9aa3a5"
             },
             {
@@ -19,7 +19,7 @@
                 "bold": true
             },
             {
-                "text": "       | 1.16.x+",
+                "text": "       | 1.17.x+",
                 "color": "#9aa3a5"
             }
         ],

@@ -12,8 +12,8 @@
 ## Compatibility
 | Category             | Supported                                      | Tested         |
 | -------------------- | ---------------------------------------------- | -------------- |
-| Vanilla singleplayer | 1.16.x - 1.18.x                                | 1.17.1, 1.18.2 |
-| Vanilla multiplayer  | 1.16.x - 1.18.x                                | 1.18.2         |
+| Vanilla singleplayer | 1.17.x - 1.18.x                                | 1.17.1, 1.18.2 |
+| Vanilla multiplayer  | 1.17.x - 1.18.x                                | 1.18.2         |
 | Other                | Bukkit, Spigot, Paper, Fabric, Forge and other | Fabric         |
 
 
