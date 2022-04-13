@@ -1,7 +1,8 @@
 data modify storage minecraft:bubbleconomy Instance set value []
 scoreboard players operation #ID bubbleconomy = @s buec.target_id
 scoreboard players operation #Amount bubbleconomy = @s buec.set_amount
-function bubbleconomy:database/write/set_balance_by_id
+scoreboard players set #Operation bubbleconomy 2
+function bubbleconomy:database/write/modify_balance_by_id
 
 tellraw @s ["", {"text":"Bubbleconomy INFO", "bold":true}, " \u25b6 ", {"text":"Successfully set balance of ", "color":"green"}, {"score":{"name":"@s", "objective":"buec.target_id"}, "color":"yellow"}, {"text":" to ", "color":"green"}, {"score":{"name":"@s", "objective":"buec.set_amount"}, "color":"yellow", "extra":["β"]}]
 

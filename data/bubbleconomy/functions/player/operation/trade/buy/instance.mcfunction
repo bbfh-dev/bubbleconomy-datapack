@@ -7,12 +7,14 @@ tag @e[type=minecraft:item, tag=buec.item, limit=1] remove buec.item
 data modify storage minecraft:bubbleconomy Instance set value []
 scoreboard players operation #ID bubbleconomy = @p buec.id
 scoreboard players operation #Amount bubbleconomy = @s buec.item_price
-function bubbleconomy:database/write/remove_balance_by_id
+scoreboard players set #Operation bubbleconomy 1
+function bubbleconomy:database/write/modify_balance_by_id
 
 data modify storage minecraft:bubbleconomy Instance set value []
 scoreboard players operation #ID bubbleconomy = @s buec.id
 scoreboard players operation #Amount bubbleconomy = @s buec.item_price
-function bubbleconomy:database/write/add_balance_by_id
+scoreboard players set #Operation bubbleconomy 3
+function bubbleconomy:database/write/modify_balance_by_id
 
 tellraw @p ["", {"text":"Bubbleconomy INFO", "bold":true}, " \u25b6 ", {"text":"Successfully bought ", "color":"green", "extra":[{"nbt":"Item.id", "entity":"@s", "color":"yellow"}]}, {"text":" for ", "color":"green", "extra":[{"score":{"name":"@s", "objective":"buec.item_price"}, "color":"yellow", "extra":["β"]}]}]
 

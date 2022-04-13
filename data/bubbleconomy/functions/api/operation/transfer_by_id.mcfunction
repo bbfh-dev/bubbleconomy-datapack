@@ -1,12 +1,14 @@
 data modify storage minecraft:bubbleconomy Instance set value []
 scoreboard players operation #ID bubbleconomy = @s buec.target_id
 scoreboard players operation #Amount bubbleconomy = @s buec.set_amount
-function bubbleconomy:database/write/add_balance_by_id
+scoreboard players set #Operation bubbleconomy 3
+function bubbleconomy:database/write/modify_balance_by_id
 
 data modify storage minecraft:bubbleconomy Instance set value []
 scoreboard players operation #ID bubbleconomy = @s buec.id
 scoreboard players operation #Amount bubbleconomy = @s buec.set_amount
-function bubbleconomy:database/write/remove_balance_by_id
+scoreboard players set #Operation bubbleconomy 1
+function bubbleconomy:database/write/modify_balance_by_id
 
 tellraw @s ["", {"text":"Bubbleconomy INFO", "bold":true}, " \u25b6 ", {"text":"Successfully transfered ", "color":"green"}, {"score":{"name":"@s", "objective":"buec.set_amount"}, "color":"yellow", "extra":["β"]}, {"text":" to a player with an ID of ", "color":"green"}, {"score":{"name":"@s", "objective":"buec.target_id"}, "color":"yellow"}]
 

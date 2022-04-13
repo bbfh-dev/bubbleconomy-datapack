@@ -1,0 +1,4 @@
+execute store result score #Value bubbleconomy run data get storage minecraft:bubbleconomy Bank[0].Balance
+execute if score #Operation bubbleconomy matches 1 store result storage minecraft:bubbleconomy Bank[0].Balance int 1 run scoreboard players operation #Value bubbleconomy -= #Amount bubbleconomy
+execute if score #Operation bubbleconomy matches 2 store result storage minecraft:bubbleconomy Bank[0].Balance int 1 run scoreboard players operation #Value bubbleconomy = #Amount bubbleconomy
+execute if score #Operation bubbleconomy matches 3 store result storage minecraft:bubbleconomy Bank[0].Balance int 1 run scoreboard players operation #Value bubbleconomy += #Amount bubbleconomy
