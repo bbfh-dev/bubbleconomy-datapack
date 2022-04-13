@@ -2,6 +2,8 @@ item replace block ~ ~ ~ container.7 with minecraft:brick{Tags:["buec.gui_item",
 item replace block ~ ~ ~ container.16 with minecraft:iron_ingot{Tags:["buec.gui_item", "buec.change_price"], Value:10b, display:{Name:'{"text":"Change price by ", "color":"gray", "italic":false, "extra":[{"text":"10β", "color":"green"}]}'}} 2
 item replace block ~ ~ ~ container.25 with minecraft:gold_ingot{Tags:["buec.gui_item", "buec.change_price"], Value:100b, display:{Name:'{"text":"Change price by ", "color":"gray", "italic":false, "extra":[{"text":"100β", "color":"green"}]}'}} 2
 
+execute if score $RestrictedAuctions bubbleconomy matches 1 run scoreboard players set @s[tag=!--buec.perm.create_auction, scores={buec.gui_op=2}] buec.gui_op 0
+
 execute if score @s buec.gui_op matches 0 run item replace block ~ ~ ~ container.8 with minecraft:writable_book{Tags:["buec.gui_item", "buec.set_operation"], Value:1b, display:{Name:'{"text":"(buy) Change operation to ", "color":"gray", "italic":false, "extra":[{"text":"sell", "color":"green"}]}'}}
 execute if score @s buec.gui_op matches 1 run item replace block ~ ~ ~ container.8 with minecraft:book{Tags:["buec.gui_item", "buec.set_operation"], Value:2b, display:{Name:'{"text":"(sell) Change operation to ", "color":"gray", "italic":false, "extra":[{"text":"auction", "color":"green"}]}'}}
 execute if score @s buec.gui_op matches 2 run item replace block ~ ~ ~ container.8 with minecraft:written_book{Tags:["buec.gui_item", "buec.set_operation"], Value:0b, display:{Name:'{"text":"(auction) Change operation to ", "color":"gray", "italic":false, "extra":[{"text":"buy", "color":"green"}]}'}}
