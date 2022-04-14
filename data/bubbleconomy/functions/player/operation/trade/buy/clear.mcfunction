@@ -1,6 +1,7 @@
 function bubbleconomy:shop/gui/open
 data modify storage minecraft:bubbleconomy Thread set from block ~ ~ ~ Items
 
+scoreboard players set #Succeed bubbleconomy 1
 execute if data storage minecraft:bubbleconomy Thread[{Slot:24b}] run function bubbleconomy:player/operation/trade/buy/clear/24
 execute unless score #Succeed bubbleconomy matches 0 if data storage minecraft:bubbleconomy Thread[{Slot:23b}] run function bubbleconomy:player/operation/trade/buy/clear/23
 execute unless score #Succeed bubbleconomy matches 0 if data storage minecraft:bubbleconomy Thread[{Slot:22b}] run function bubbleconomy:player/operation/trade/buy/clear/22

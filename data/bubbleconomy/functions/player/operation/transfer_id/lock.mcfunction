@@ -1,0 +1,2 @@
+execute as @s[scores={buec.link=1..}] run tellraw @s ["", {"text":"Bubbleconomy ERROR", "bold":true}, " \u25b6 ", {"text":"You are unable to transfer money while participating in an auction!", "color":"red"}]
+execute unless score @s buec.link matches 1.. run function bubbleconomy:api/transfer_by_id

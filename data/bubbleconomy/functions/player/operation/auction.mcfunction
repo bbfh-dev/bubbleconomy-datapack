@@ -1,0 +1,2 @@
+execute if score @s buec.auction matches 0 run function bubbleconomy:player/operation/auction/show_gui/helper
+execute if score @s buec.auction matches 1.. run function bubbleconomy:player/operation/auction/prexecute
