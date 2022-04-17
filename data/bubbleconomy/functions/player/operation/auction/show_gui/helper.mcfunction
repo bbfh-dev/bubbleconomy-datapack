@@ -1,1 +1,1 @@
-tellraw @s ["", {"text":"Bubbleconomy INFO", "bold":true}, " \u25b6 ", "Please enter an amount bigger than previous value: ", {"text":"[INPUT]", "color":"light_purple", "clickEvent":{"action":"suggest_command", "value":"/trigger buec.auction set "}}]
+tellraw @s ["", {"text":"Bubbleconomy INFO", "bold":true}, " \u25b6 ", "Please enter an amount bigger than previous value: ", {"text":"[INPUT]", "color":"light_purple", "clickEvent":{"action":"suggest_command", "value":"/trigger buec.set_bid set "}}]

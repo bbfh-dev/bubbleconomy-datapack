@@ -11,4 +11,4 @@ execute if score @p bubbleconomy matches 1.. run scoreboard players remove @s bu
 execute if score @p bubbleconomy matches 1.. run tellraw @p ["", {"text":"Bubbleconomy INFO", "bold":true}, " \u25b6 ", {"text":"Changed price by -100β. Now: ", "color":"green"}, {"score":{"name":"@s", "objective":"buec.item_price"}, "color":"yellow", "extra":["β"]}]
 
 scoreboard players set @s[scores={buec.item_price=..-1}] buec.item_price 0
-scoreboard players operation @s buec.auction = @s buec.item_price
+scoreboard players operation @s buec.set_bid = @s buec.item_price

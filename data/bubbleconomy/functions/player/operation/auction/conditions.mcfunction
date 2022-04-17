@@ -1,2 +1,2 @@
-execute if score @s buec.auction > @p buec.auction run tellraw @p ["", {"text":"Bubbleconomy ERROR", "bold":true}, " \u25b6 ", {"text":"Auction price is higher than your proposition. ", "color":"red", "extra":[{"score":{"objective":"buec.auction", "name":"@s"}}, " > ", {"score":{"objective":"buec.auction", "name":"@p"}, "color":"yellow"}]}]
-execute unless score @s buec.auction > @p buec.auction run function bubbleconomy:player/operation/auction/check_balance
+execute if score @s buec.set_bid > @p buec.set_bid run tellraw @p ["", {"text":"Bubbleconomy ERROR", "bold":true}, " \u25b6 ", {"text":"Auction price is higher than your proposition. ", "color":"red", "extra":[{"score":{"objective":"buec.set_bid", "name":"@s"}}, " > ", {"score":{"objective":"buec.set_bid", "name":"@p"}, "color":"yellow"}]}]
+execute unless score @s buec.set_bid > @p buec.set_bid run function bubbleconomy:player/operation/auction/check_balance

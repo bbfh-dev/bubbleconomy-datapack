@@ -1,0 +1,1 @@
+scoreboard players set $AuctionTimer bubbleconomy 1200

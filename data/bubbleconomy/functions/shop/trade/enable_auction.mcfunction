@@ -1,2 +1,2 @@
-scoreboard players enable @p buec.auction
-scoreboard players set @p buec.auction -1
+scoreboard players enable @p buec.set_bid
+scoreboard players set @p buec.set_bid -1

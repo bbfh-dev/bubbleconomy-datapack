@@ -19,7 +19,7 @@ scoreboard objectives add buec.get_id trigger
 scoreboard objectives add buec.transfer_id trigger
 scoreboard objectives add buec.set_amount trigger
 
-scoreboard objectives add buec.auction trigger
+scoreboard objectives add buec.set_bid trigger
 scoreboard objectives add buec.set_balance trigger
 
 forceload add 0 0
@@ -28,6 +28,7 @@ execute unless data storage minecraft:bubbleconomy Messages run data modify stor
 execute unless score $DefaultBalance bubbleconomy matches -2147483648..2147483647 run scoreboard players set $DefaultBalance bubbleconomy 0
 execute unless score $PlayerShops bubbleconomy matches -2147483648..2147483647 run scoreboard players set $PlayerShops bubbleconomy 1
 execute unless score $PlayerMessages bubbleconomy matches -2147483648..2147483647 run scoreboard players set $PlayerMessages bubbleconomy 1
+execute unless score $AuctionTimer bubbleconomy matches -2147483648..2147483647 run scoreboard players set $AuctionTimer bubbleconomy 400
 
 # execute if score $PackVersion bubbleconomy matches -2147483648..2147483647 unless score $PackVersion bubbleconomy matches 100 run ...
 execute unless score $PackVersion bubbleconomy matches -2147483648..2147483647 run scoreboard players set $PackVersion bubbleconomy 100
